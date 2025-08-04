@@ -5,7 +5,7 @@ import path    from 'path';
 
 //List of routes
 import Test       from './routes/test';
-import TestAddNew from './routes/testaddnew';
+
 
 //Initial set up
 const PORT   = process.env.PORT || 8000;
@@ -19,7 +19,6 @@ server.use(express.static(path.join(__dirname, '../public')));
 
 //Set the route paths
 server.use('/api/v1/test', Test);
-server.use('/api/v1/testaddnew', TestAddNew);
 
 server.listen(PORT, () =>
   console.log(`Server running on: http://localhost:${PORT}`)
