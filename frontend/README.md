@@ -15,17 +15,7 @@ A React TypeScript application that demonstrates a simple todo list interface
    ```
 
 ## Backend Setup
-
 This frontend requires the backend server to be running. Please follow these steps:
-
-1. Clone and set up the backend repository:
-   ```bash
-   git clone https://github.com/AngheloAmir/NodeTSDrizzleTask.git
-   cd NodeTSDrizzleTask
-   npm install
-   ```
-
-2. Start the backend server (refer to the backend's README for detailed instructions)
 
 ## Configuration
 
