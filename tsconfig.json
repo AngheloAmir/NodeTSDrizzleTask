@@ -28,6 +28,6 @@
     "declaration": true,
     "declarationMap": true
   },
-  "include": ["src/**/*.ts", "public"],
+  "include": ["src/**/*.ts", "public", "drizzle.config.ts"],
   "exclude": ["node_modules"]
 }
