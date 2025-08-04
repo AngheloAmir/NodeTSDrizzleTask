@@ -18,8 +18,8 @@ A full-stack Todo application with a **Node.js + Express + TypeScript** backend 
 ### 1. Clone the Repository
 
 ```bash
-git clone git@github.com:AngheloAmir/NodeTSDrizzleTask.git
-cd NodeTSDrizzleTask
+git clone git@github.com:AngheloAmir/simple-todo-app.git
+cd simple-todo-app
 ```
 
 ### 2. Install Dependencies
