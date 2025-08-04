@@ -67,6 +67,7 @@ cd backend
 npm run dev
 ```
 
+also run in root directory:
 ```bash
 # start frontend development server only
 cd frontend
