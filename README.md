@@ -1,77 +1,80 @@
-# 📝 Todo App (Full stack)
+# 📝 Todo App (Full Stack)
 
-A simple full-stack Todo application built with **Node.js**, **Express**, **TypeScript**, and **React**, using **PostgreSQL** and **Drizzle ORM**.
+A full-stack Todo application with a **Node.js + Express + TypeScript** backend and a **React** frontend, using **PostgreSQL** with **Drizzle ORM**.
 
 ## ✨ Features
 
-- **Backend:** Node.js + Express + TypeScript  
-- **Frontend:** React (served from the backend)  
-- **Database:** PostgreSQL with Drizzle ORM  
-- **Testing:** Jest and Supertest  
+### Backend
+- **Runtime:** Node.js + Express + TypeScript
+- **Database:** PostgreSQL with Drizzle ORM
+- **API:** RESTful endpoints for CRUD operations
+- **Testing:** Jest and Supertest for API testing
 
-Access the full stack application at: [http://localhost:8000](http://localhost:8000)
+### Frontend
+- **Framework:** React with TypeScript
 
-## ⚙️ Getting Started
+## 🛠️ Project Setup
 
-Follow these steps to set up the project locally.
-
-## Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone git@github.com:AngheloAmir/NodeTSDrizzleTask.git
+cd NodeTSDrizzleTask
 ```
 
-
-## Install Dependencies
+### 2. Install Dependencies
 
 ```bash
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ..
+cd frontend
 npm install
 ```
 
-## Set Up Supabase and Drizzle ORM
-Create a new project in the [Supabase Dashboard](https://app.supabase.com) and dont forget about your password for that Supabase project. This asked during project set up.
+### 3. Set Up Supabase
+1. Create a new project in the [Supabase Dashboard](https://app.supabase.com)
+2. Note down your database password (created during project setup)
+3. Get your connection string from the Supabase dashboard
 
+### 4. Configure Environment Variables
 
-## Configure Environment Variables
-
-Create a `.env` file in the root directory and add the following variable:
+Create a `.env` file in the backend directory:
 
 ```env
-DATABASE_URL=postgresql://username:password@host/database_name
+DATABASE_URL=postgresql://postgres-username:your-password@db.your-supabase-project.supabase.co:5432/postgres
 ```
 
-You can find your connection string in the **Supabase dashboard** in **Connect** button  
->📘 Learn more about connection pooling in the [Supabase documentation](https://supabase.com/docs/guides/database/connecting-to-postgres#connection-pooler)
-
-
-## Run Migrations
-
-Once the `DATABASE_URL` is correctly set in the `.env` file, generate and run your database migrations:
+### 5. Run Database Migrations
+Run the following comand to generate a migration and make updates to the Supabase
 
 ```bash
+cd ..
+cd backend
 npx drizzle-kit generate
 npx drizzle-kit migrate
 ```
 
-These commands will create and apply the necessary SQL migrations to your Supabase project.
-
->📘 Learn more about setting up in the  [Drizzle with Supabase documentation](hhttps://orm.drizzle.team/docs/tutorials/drizzle-with-supabase)
-
-
-
-## Start the Application
+### 6. Start the Application
+In the root directory, run:
 
 ```bash
+# Start the full stack app
+cd backend
 npm run dev
 ```
 
-
-## Access the App
-
-Open your browser and navigate to:
-
-```
-http://localhost:8000
+```bash
+# start frontend development server only
+cd frontend
+npm run start
 ```
 
-You should now see the Todo app in action!
+
+## 🌐 Access the Application
+
+- **React Front end only** http://localhost:3000
+- **Fullstack** http://localhost:8000/
