@@ -1,4 +1,4 @@
-# 📝 Todo App – Technical Assessment
+# 📝 Todo App (Full stack)
 
 A simple full-stack Todo application built with **Node.js**, **Express**, **TypeScript**, and **React**, using **PostgreSQL** and **Drizzle ORM**.
 
