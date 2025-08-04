@@ -9,8 +9,10 @@
     "lint-fix": "eslint . --ext .ts --fix",
     "dev":      "nodemon ./src/index.ts",
 
-    "testtest": "npx jest test/routetest.test.ts",
-    "testget":  "npx jest test/get.test.ts"
+    "testtest":   "npx jest test/routetest.test.ts",
+    "testget":    "npx jest test/get.test.ts",
+    "testadd":    "npx jest test/add.test.ts",
+    "testdelete": "npx jest test/delete.test.ts"
   },
   "keywords": [
     "typescript",
