@@ -45,8 +45,7 @@ DATABASE_URL=postgresql://username:password@host/database_name
 ```
 
 You can find your connection string in the **Supabase dashboard** in **Connect** button  
-📘 Learn more about connection pooling in the  
-[Supabase documentation](https://supabase.com/docs/guides/database/connecting-to-postgres#connection-pooler)
+>📘 Learn more about connection pooling in the [Supabase documentation](https://supabase.com/docs/guides/database/connecting-to-postgres#connection-pooler)
 
 ---
 
@@ -59,9 +58,9 @@ npx drizzle-kit generate
 npx drizzle-kit migrate
 ```
 
-> 💡 These commands will create and apply the necessary SQL migrations to your Supabase project.
+These commands will create and apply the necessary SQL migrations to your Supabase project.
 
-
+>📘 Learn more about setting up in the  [Drizzle with Supabase documentation](hhttps://orm.drizzle.team/docs/tutorials/drizzle-with-supabase)
 
 
 ---
