@@ -41,6 +41,38 @@ router.post('/', async (req, res) => {
 });
 
 //==================================================================
+router.patch('/:id/toggle', async (req, res) => {
+  const id = parseInt(req.params.id);
+  
+  if (isNaN(id)) {
+    return res.status(400).json({ error: 'Invalid todo ID' });
+  }
+
+  try {
+    const [currentTodo] = await db.select()
+      .from(todos)
+      .where(eq(todos.id, id));
+    
+    if (!currentTodo) {
+      return res.status(404).json({ error: 'Todo not found' });
+    }
+
+    // Toggle the is_done status
+    const [updatedTodo] = await db.update(todos)
+      .set({ 
+        is_done: !currentTodo.is_done
+      })
+      .where(eq(todos.id, id))
+      .returning();
+    
+    return res.json(updatedTodo);
+  } catch (error) {
+    console.error('Error toggling todo status:', error);
+    return res.status(500).json({ error: 'Failed to update todo status' });
+  }
+});
+
+//==================================================================
 router.delete('/:id', async (req, res) => {
   const id = parseInt(req.params.id);
   
