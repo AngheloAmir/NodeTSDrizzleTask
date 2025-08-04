@@ -52,7 +52,7 @@ DATABASE_URL=postgresql://postgres-username:your-password@db.your-supabase-proje
 Run the following comand to generate a migration and make updates to the Supabase
 
 ```bash
-cd ..
+# In the root directory
 cd backend
 npx drizzle-kit generate
 npx drizzle-kit migrate
