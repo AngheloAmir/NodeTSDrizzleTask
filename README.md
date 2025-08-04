@@ -19,7 +19,6 @@ Follow these steps to set up the project locally.
 
 ```bash
 git clone git@github.com:AngheloAmir/NodeTSDrizzleTask.git
-cd BackendTask
 ```
 
 ---
