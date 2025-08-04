@@ -1,6 +1,6 @@
 # 📝 Simple Todo App API + UI (No Auth, No Deployment Required)
 
-A full-stack Todo application with a **Node.js + Express + TypeScript** backend and a **React** frontend, using **PostgreSQL** with **Drizzle ORM**.
+A full-stack Todo application with a **Node.js + Express + TypeScript** backend and a **React** frontend, using **PostgreSQL** with **Drizzle ORM** and **Supabase**.
 
 ## ✨ Features
 
