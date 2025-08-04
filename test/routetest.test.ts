@@ -9,8 +9,12 @@ describe('Test Endpoint', () => {
     app = server.listen(0);
   });
 
-  afterAll((done) => {
-    app.close(done);
+  afterAll(() => {
+    return new Promise((resolve) => {
+      app.close(() => {
+        resolve(undefined);
+      });
+    });
   });
 
   it('should return 200 and the test message', async () => {
@@ -26,4 +30,3 @@ describe('Test Endpoint', () => {
   });
 });
 
-//npx jest test/routetest.test.ts

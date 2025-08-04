@@ -6,9 +6,7 @@ import path    from 'path';
 //List of routes
 import Test       from './routes/test';
 
-
 //Initial set up
-const PORT   = process.env.PORT || 8000;
 const server = express();
 server.use(morgan('dev'));
 server.use(cors());
@@ -19,9 +17,5 @@ server.use(express.static(path.join(__dirname, '../public')));
 
 //Set the route paths
 server.use('/api/v1/test', Test);
-
-server.listen(PORT, () =>
-  console.log(`Server running on: http://localhost:${PORT}`)
-);
 
 export default server;
