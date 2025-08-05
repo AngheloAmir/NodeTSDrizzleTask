@@ -15,7 +15,7 @@ A React TypeScript application that demonstrates a simple todo list interface
    ```
 
 ## Backend Setup
-This frontend requires the backend server to be running. Please follow these steps:
+This frontend requires the backend server to be running.Please run the backend server first.
 
 ## Configuration
 

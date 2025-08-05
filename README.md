@@ -69,7 +69,7 @@ npm run dev
 
 also run in root directory:
 ```bash
-# start frontend development server only
+# start frontend development
 cd frontend
 npm run start
 ```
@@ -77,5 +77,6 @@ npm run start
 
 ## 🌐 Access the Application
 
-- **React Front end only** http://localhost:3000
-- **Fullstack** http://localhost:8000/
+**React Front Development** http://localhost:3000
+
+**Fullstack (using a compiled compiled React app)** http://localhost:8000/
