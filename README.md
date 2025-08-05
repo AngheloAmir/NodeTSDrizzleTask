@@ -42,11 +42,12 @@ npm install
 
 ### 4. Configure Environment Variables
 
-Create a `.env` file in the backend directory:
+Create a `.env` file in the backend directory and and put your connection string from the Supabase dashboard
 
 ```env
 DATABASE_URL=postgresql://postgres-username:your-password@db.your-supabase-project.supabase.co:5432/postgres
 ```
+> You can find your connection string by clicking the button "Connect" in your Supabase dashboard project
 
 ### 5. Run Database Migrations
 Run the following comand to generate a migration and make updates to the Supabase
