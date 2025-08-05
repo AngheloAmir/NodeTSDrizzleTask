@@ -4,7 +4,7 @@ A React TypeScript application that demonstrates a simple todo list interface
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository (from the original source repo):
    ```bash
    git clone git@github.com:AngheloAmir/FrontendTask.git
    ```
