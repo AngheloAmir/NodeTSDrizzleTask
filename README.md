@@ -80,4 +80,4 @@ npm run start
 
 **React Front Development** http://localhost:3000
 
-**Fullstack (using a compiled compiled React app)** http://localhost:8000/
+**Fullstack (using a compiled React app)** http://localhost:8000/
